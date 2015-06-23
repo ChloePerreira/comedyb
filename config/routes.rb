@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   get "/", to: "home#index", as: :root
 
+  get "/auth/google_oauth2/callback", to: "session#create", as: :connect
 
 
   # The priority is based upon order of creation: first created -> highest priority.
